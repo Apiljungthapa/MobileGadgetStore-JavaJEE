@@ -50,29 +50,39 @@ ByteBazaar is a comprehensive e-commerce platform designed to facilitate the buy
    Create a new MySQL database.
    Import the schema.sql file to set up the database schema.
    Run the Application:
-
+   ```
 4. **Run the Application**:
- ```bash
- Deploy the project on the configured Tomcat Server.
- Access the application at http://localhost:8080/ByteBazaar.
+  ```bash
+  Deploy the project on the configured Tomcat Server.
+  Access the application at http://localhost:8080/ByteBazaar.
+   ```
 
 5. **Documentation**:
-Detailed project documentation can be found in the documentation folder. This includes the project report, design diagrams, and user manuals.
-
+   ```bash
+   Detailed project documentation can be found in the documentation folder. This includes the project report, design diagrams, and user manuals.
+   ```
 6. **Contributing**:
+
 We welcome contributions to enhance ByteBazaar. Please follow these steps to contribute:
+   
 
 * Fork the repository.
 * Create a new branch for your feature or bug fix.
 * Commit your changes and push the branch to your forked repository.
 * Create a pull request with a detailed description of your changes.
+```
 
 7. **License**:
+
+
 This project is licensed under the MIT License. See the [https://github.com/Apiljungthapa/MobileGadgetStore-JavaJEE/blob/master/LICENSE] for more details.
+```
 
 8. **Contact**:
+```bash
 For any inquiries or support, please contact Apiljung Thapa at apilthapa87@gmail.com.
 
 Thank you for using ByteBazaar!
 
 This README provides a clear overview and instructions for setting up and contributing to the project.
+```
