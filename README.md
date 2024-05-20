@@ -38,3 +38,27 @@ ByteBazaar is a comprehensive e-commerce platform designed to facilitate the buy
    ```bash
    git clone https://github.com/Apiljungthapa/MobileGadgetStore-JavaJEE.git
    cd MobileGadgetStore-JavaJEE
+
+
+Set up the development environment:
+
+Import the development folder into Eclipse as an existing project.
+Configure Apache Tomcat Server in Eclipse.
+Database Setup:
+
+Create a new MySQL database.
+Import the schema.sql file to set up the database schema.
+Run the Application:
+
+Deploy the project on the configured Tomcat Server.
+Access the application at http://localhost:8080/ByteBazaar.
+Documentation
+Detailed project documentation can be found in the documentation folder. This includes the project report, design diagrams, and user manuals.
+
+Contributing
+We welcome contributions to enhance ByteBazaar. Please follow these steps to contribute:
+
+Fork the repository.
+Create a new branch for your feature or bug fix.
+Commit your changes and push the branch to your forked repository.
+Create a pull request with a detailed description of your changes.
