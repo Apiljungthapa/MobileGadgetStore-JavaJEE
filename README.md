@@ -6,8 +6,8 @@ Welcome to ByteBazaar, an e-commerce website for selling mobile gadgets, develop
 
 The project repository is organized as follows:
 
-- **development/**: Contains the Eclipse project folder with all the source code and configurations.
-- **documentation/**: Includes a full report detailing the project, its design, and implementation.
+- **development**: Contains the Eclipse project folder with all the source code and configurations.
+- **documentation**: Includes a full report detailing the project, its design, and implementation.
 - **schema.sql**: The SQL file for the overall database schema and a dump file of our system.
 
 ## Description
