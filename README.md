@@ -41,21 +41,20 @@ ByteBazaar is a comprehensive e-commerce platform designed to facilitate the buy
 
 
 2. **Set up the development environment**:
-
- 
- Import the development folder into Eclipse as an existing project.
- Configure Apache Tomcat Server in Eclipse.
+   ```bash 
+    Import the development folder into Eclipse as an existing project.
+    Configure Apache Tomcat Server in Eclipse.
   
 3. **Database Setup**:
- ```bash
-* Create a new MySQL database.
-* Import the schema.sql file to set up the database schema.
-* Run the Application:
+  ```bash
+   Create a new MySQL database.
+   Import the schema.sql file to set up the database schema.
+   Run the Application:
 
 4. **Run the Application**:
-
-* Deploy the project on the configured Tomcat Server.
-* Access the application at http://localhost:8080/ByteBazaar.
+ ```bash
+ Deploy the project on the configured Tomcat Server.
+ Access the application at http://localhost:8080/ByteBazaar.
 
 5. **Documentation**:
 Detailed project documentation can be found in the documentation folder. This includes the project report, design diagrams, and user manuals.
