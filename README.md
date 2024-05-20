@@ -62,6 +62,8 @@ ByteBazaar is a comprehensive e-commerce platform designed to facilitate the buy
    Detailed project documentation can be found in the documentation folder. This includes the project report, design diagrams, and user manuals.
    ```
 6. **Contributing**:
+   
+ ```bash
 
 We welcome contributions to enhance ByteBazaar. Please follow these steps to contribute:
    
