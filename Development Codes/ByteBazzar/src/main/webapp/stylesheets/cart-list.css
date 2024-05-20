@@ -1,0 +1,178 @@
+.tha-cover-list {
+  background-color: #f8f9fa;
+  padding: 30px 0px;
+}
+
+.tha-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+/* Header styling */
+.tha-headerr {
+  background-color: #003366;
+  color: #ffffff;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 8px 8px 0 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Main content area styling */
+.tha-main-content {
+  max-height: 732px;
+  overflow-y: auto;
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Table container with scrollbar */
+.tha-table-container {
+  overflow-y: auto;
+}
+
+/* Table styling */
+.tha-tablee {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.tha-tablee th, .tha-tablee td {
+  padding: 0.75rem;
+  font-weight: bold;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.tha-btoon_cart {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 30px;
+}
+
+/* Button styling */
+.tha-button, .tha-rem-but, .tha-proc-but {
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.tha-button-primary {
+  background-color: #4527a0;
+  color: #ffffff;
+  border-radius: 15px;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.tha-proc-but {
+  background-color: #e90f0f;
+  color: #ffffff;
+  border-radius: 15px;
+  font-size: 14px;
+}
+
+.tha-rem-but {
+  background-color: #080808;
+  color: rgb(255, 255, 255);
+}
+
+.tha-rem-but:hover {
+  background-color: #ff0000;
+}
+
+.tha-button-primary:hover {
+  background-color: #56217c;
+}
+
+.tha-proc-but:hover {
+  background-color: #892525;
+}
+
+.tha-button-secondary {
+  background-color: #F3BA2F;
+  color: #000000;
+  
+}
+
+.tha-button-secondary:hover {
+  background-color: #e6a300;
+}
+
+/* Input field styling */
+.tha-inputt {
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  width: 45px;
+  text-align: center;
+}
+
+
+tha-button, .tha-rem-but, .tha-proc-but {
+    padding: 0.75rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+.sumbut:hover{
+	
+	background-color:black;
+	color:white;
+}
+
+.tha-quantity-control {
+  display: flex;
+  gap: 4px;
+  justify-content: center;
+}
+
+.tha-ttll {
+  background-color:#e8e8e8;
+  padding: 15px 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+
+
+@media (max-width: 1030px) {
+  .tha-tablee {
+    width: 900px;
+  }
+}
+
+/* Responsive layout adjustments */
+@media (max-width: 768px) {
+  .tha-tablee {
+    width: 750px;
+  }
+  .tha-container {
+    padding: 0.5rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .tha-tablee {
+    width: 300px;
+  }
+  .tha-btoon_cart {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

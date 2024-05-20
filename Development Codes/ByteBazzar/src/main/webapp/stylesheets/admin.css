@@ -1,0 +1,1514 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500;600&display=swap");
+
+
+
+:root {
+
+  --main-color: #22baa0;
+
+  --color-dark: #34425a;
+
+  --text-grey: #b0b0b0;
+
+}
+
+.success-message {
+
+    background-color: #32CD32; /* Green background */
+
+    color: #000000; /* Black text */
+
+    padding: 10px;
+
+    margin-bottom: 10px; /* Add some spacing between messages */
+
+}
+
+* {
+
+  margin: 0;
+
+  padding: 0;
+
+  text-decoration: none;
+
+  list-style-type: none;
+
+  box-sizing: border-box;
+
+  font-family: "Merriweather", sans-serif;
+
+}
+
+
+
+#menu-toggle {
+
+  display: none;
+
+}
+
+
+
+.client-img {
+
+    width: 100px; /* Adjust the width and height to fit your design */
+
+    height: 100px;
+
+    border-radius: 50%; /* This will create a circular shape */
+
+    overflow: hidden; /* This ensures that the image is clipped to the border-radius */
+
+}
+
+
+
+.client-img img {
+
+    width: 100%; /* Ensure the image fills the circular container */
+
+    height: auto; /* Maintain the aspect ratio of the image */
+
+}
+
+
+
+.api-arb-back-pm{
+	
+	padding:10px 20px;
+	background-color:black;
+	color:white;
+	cursor:pointer;
+}
+
+.sidebar {
+
+  position: fixed;
+
+  height: 100%;
+
+  width: 165px;
+
+  left: 0;
+
+  bottom: 0;
+
+  top: 0;
+
+  z-index: 100;
+
+  background: var(--color-dark);
+
+  transition: left 300ms;
+
+}
+
+
+
+.side-header {
+
+  box-shadow: 0px 5px 5px -5px rgb(0 0 0 /10%);
+
+  background: var(--main-color);
+
+  height: 60px;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+}
+
+
+
+.side-header h3,
+
+side-head span {
+
+  color: #fff;
+
+  font-weight: 400;
+
+}
+
+
+
+.side-content {
+
+  height: calc(100vh - 60px);
+
+  overflow: auto;
+
+}
+
+
+
+/* width */
+
+.side-content::-webkit-scrollbar {
+
+  width: 5px;
+
+}
+
+
+
+/* Track */
+
+.side-content::-webkit-scrollbar-track {
+
+  box-shadow: inset 0 0 5px grey;
+
+  border-radius: 10px;
+
+}
+
+
+
+/* Handle */
+
+.side-content::-webkit-scrollbar-thumb {
+
+  background: #b0b0b0;
+
+  border-radius: 10px;
+
+}
+
+
+
+/* Handle on hover */
+
+.side-content::-webkit-scrollbar-thumb:hover {
+
+  background: #b30000;
+
+}
+
+
+
+.profile {
+
+  text-align: center;
+
+  padding: 2rem 0rem;
+
+}
+
+
+
+.bg-img {
+
+  background-repeat: no-repeat;
+
+  background-size: cover;
+
+  border-radius: 50%;
+
+  background-size: cover;
+
+}
+
+
+
+.profile-img {
+
+  height: 80px;
+
+  width: 80px;
+
+  display: inline-block;
+
+  margin: 0 auto 0.5rem auto;
+
+  border: 3px solid #899dc1;
+
+}
+
+
+
+.profile h4 {
+
+  color: #fff;
+
+  font-weight: 500;
+
+}
+
+
+
+.profile small {
+
+  color: #899dc1;
+
+  font-weight: 600;
+
+}
+
+
+
+.side-menu ul {
+
+  text-align: center;
+
+}
+
+
+
+.side-menu a {
+
+  display: block;
+
+  padding: 1.2rem 0rem;
+
+}
+
+
+
+.side-menu a.active {
+
+  background: #2b384e;
+
+}
+
+
+
+.side-menu a.active span,
+
+.side-menu a.active small {
+
+  color: #fff;
+
+}
+
+
+
+.side-menu a span {
+
+  display: block;
+
+  text-align: center;
+
+  font-size: 1.7rem;
+
+}
+
+
+
+.side-menu a span,
+
+.side-menu a small {
+
+  color: #899dc1;
+
+}
+
+
+
+#menu-toggle:checked ~ .sidebar {
+
+  width: 60px;
+
+}
+
+
+
+#menu-toggle:checked ~ .sidebar .side-header span {
+
+  display: none;
+
+}
+
+
+
+#menu-toggle:checked ~ .main-content {
+
+  margin-left: 60px;
+
+  width: calc(100% - 60px);
+
+}
+
+
+
+#menu-toggle:checked ~ .main-content header {
+
+  left: 60px;
+
+}
+
+
+
+#menu-toggle:checked ~ .sidebar .profile,
+
+#menu-toggle:checked ~ .sidebar .side-menu a small {
+
+  display: none;
+
+}
+
+
+
+#menu-toggle:checked ~ .sidebar .side-menu a span {
+
+  font-size: 1.3rem;
+
+}
+
+
+
+.main-content {
+
+  margin-left: 165px;
+
+  width: calc(100% - 165px);
+
+  transition: margin-left 300ms;
+
+}
+
+
+
+header {
+
+  position: fixed;
+
+  right: 0;
+
+  top: 0;
+
+  left: 165px;
+
+  z-index: 100;
+
+  height: 60px;
+
+  box-shadow: 0px 5px 5px -5px rgb(0 0 0 /10%);
+
+  background: #fff;
+
+  transition: left 300ms;
+
+}
+
+
+
+.header-content,
+
+.header-menu {
+
+  display: flex;
+
+  align-items: center;
+
+}
+
+
+
+.header-content {
+
+  justify-content: space-between;
+
+  padding: 0rem 1rem;
+
+  margin-top: 3px;
+
+}
+
+
+
+.header-content label:first-child span {
+
+  font-size: 1.8rem;
+
+}
+
+
+
+.header-content label {
+
+  cursor: pointer;
+
+}
+
+
+
+.header-menu {
+
+  justify-content: flex-end;
+
+  padding-top: 0.5rem;
+
+}
+
+
+
+.header-menu label,
+
+.header-menu .notify-icon {
+
+  margin-right: 2rem;
+
+  position: relative;
+
+}
+
+
+
+.header-menu label span,
+
+.notify-icon span:first-child {
+
+  font-size: 1.3rem;
+
+}
+
+
+
+.notify-icon span:last-child {
+
+  position: absolute;
+
+  background: var(--main-color);
+
+  height: 16px;
+
+  width: 16px;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  border-radius: 50%;
+
+  right: -5px;
+
+  top: -5px;
+
+  color: #fff;
+
+  font-size: 0.8rem;
+
+  font-weight: 500;
+
+}
+
+
+
+.user {
+
+  display: flex;
+
+  align-items: center;
+
+}
+
+
+
+.user div,
+
+.client-img {
+
+  height: 40px;
+
+  width: 40px;
+
+  margin-right: 1rem;
+
+}
+
+
+
+.user span:last-child {
+
+  display: inline-block;
+
+  margin-left: 0.3rem;
+
+  font-size: 1rem;
+
+}
+
+
+
+.logout-btnm,
+
+.add-btn-prod {
+
+  padding: 10px 20px; /* Padding inside the button */
+
+  font-size: 16px; /* Font size of the text */
+
+  color: white; /* Text color */
+
+  background-color: #ff5733; /* Background color of the button */
+
+  border: none; /* No border */
+
+  border-radius: 5px; /* Rounded corners */
+
+  cursor: pointer; /* Cursor style on hover */
+
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+
+}
+
+
+
+.add-btn-prod {
+
+  background-color: #333a95;
+
+  margin-left: 4px;
+
+  margin-bottom: 15px;
+
+}
+
+
+
+/* Hover effect for the button */
+
+.logout-btnm:hover {
+
+  background-color: #d1450c; /* Darker background color on hover */
+
+}
+
+
+
+main {
+
+  margin-top: 60px;
+
+}
+
+
+
+.page-header {
+
+  padding: 1.3rem 1rem;
+
+  background: #e9edf2;
+
+  border-bottom: 1px solid #dee2e8;
+
+}
+
+
+
+.page-header h1,
+
+.page-header small {
+
+  color: #74767d;
+
+}
+
+
+
+.page-content {
+
+  padding: 1.3rem 1rem;
+
+  background: #f1f4f9;
+
+}
+
+
+
+.analytics {
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  grid-gap: 2rem;
+
+  margin-top: 0.5rem;
+
+  margin-bottom: 2rem;
+
+}
+
+
+
+.card {
+
+  box-shadow: 0px 5px 5px -5px rgb(0 0 0 / 30%),
+
+    0px 5px 5px -5px rgb(0 0 0 / 30%);
+
+  background: white;
+
+  padding: 1.1rem;
+
+  border-radius: 10px;
+
+}
+
+
+
+.dev-act {
+
+  color: black;
+
+  transition: 0.3s;
+
+}
+
+
+
+.dev-act:hover {
+
+  color: rgb(249, 8, 8);
+
+}
+
+
+
+.card-head {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+}
+
+
+
+.card-head h2 {
+
+  color: #333;
+
+  font-size: 1.8rem;
+
+  font-weight: 500;
+
+}
+
+
+
+.card-head span {
+
+  font-size: 3.2rem;
+
+  color: #3ad6bc;
+
+}
+
+
+
+.card-progress small {
+
+  color: #777;
+
+  font-size: 0.9rem;
+
+  font-weight: 600;
+
+}
+
+
+
+.card-indicator {
+
+  margin: 0.7rem 0rem;
+
+  height: 10px;
+
+  border-radius: 4px;
+
+  background: #e9edf2;
+
+  overflow: hidden;
+
+}
+
+
+
+.indicator {
+
+  height: 10px;
+
+  border-radius: 4px;
+
+}
+
+
+
+.indicator.one {
+
+  background: #22baa0;
+
+}
+
+
+
+.indicator.two {
+
+  background: #11a8c3;
+
+}
+
+
+
+.indicator.three {
+
+  background: #f6d433;
+
+}
+
+
+
+.indicator.four {
+
+  background: #f25656;
+
+}
+
+
+
+.records {
+
+  box-shadow: 0px 5px 5px -5px rgb(0 0 0 / 10%);
+
+  background: #fff;
+
+  border-radius: 3px;
+
+}
+
+
+
+.record-header {
+
+  padding: 1rem;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+}
+
+
+
+.search-container {
+
+  display: flex;
+
+  align-items: center;
+
+  width: 290px;
+
+  padding: 7px;
+
+  border-radius: 8px;
+
+  border: 1px solid #ccc;
+
+  background-color: white;
+
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+
+}
+
+
+
+.search-input {
+
+  flex: 1;
+
+  border: none;
+
+  background-color: transparent;
+
+  height: 28px;
+
+  font-weight: bold;
+
+  padding-left: 0;
+
+  color: black; /* Change text color to black */
+
+}
+
+
+
+.search-button {
+
+  width: 28px;
+
+  height: 28px;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  cursor: pointer;
+
+  background-color: #fff;
+
+  border: none;
+
+  border-left: 1px solid #ccc;
+
+}
+
+
+
+.search-icon {
+
+  width: 16px;
+
+  height: 16px;
+
+  stroke: #333;
+
+  stroke-width: 2;
+
+  stroke-linecap: round;
+
+  stroke-linejoin: round;
+
+}
+
+
+
+.add,
+
+.browse {
+
+  display: flex;
+
+  align-items: center;
+
+}
+
+
+
+.add span {
+
+  display: inline-block;
+
+  margin-right: 0.6rem;
+
+  font-size: 0.9rem;
+
+  color: #666;
+
+}
+
+
+
+input,
+
+button,
+
+select {
+
+  outline: none;
+
+}
+
+
+
+.add select,
+
+.browse input,
+
+.browse select {
+
+  height: 35px;
+
+  border: 1px solid #f9fafb;
+
+  border-radius: 3px;
+
+  display: inline-block;
+
+  width: 75px;
+
+  padding: 0rem 0.5rem;
+
+  margin-right: 0.8rem;
+
+}
+
+
+
+.browse input {
+
+  height: 28px;
+
+  border: 0px;
+
+}
+
+
+
+.add button {
+
+  background: var(--main-color);
+
+  color: #fff;
+
+  height: 37px;
+
+  border-radius: 4px;
+
+  padding: 0rem 1rem;
+
+  border: none;
+
+  font-weight: 600;
+
+}
+
+
+
+.browse input {
+
+  width: 150px;
+
+}
+
+
+
+.browse select {
+
+  width: 100px;
+
+}
+
+
+
+.table-responsive {
+
+  width: 100%;
+
+  overflow: auto;
+
+}
+
+
+
+table {
+
+  border-collapse: collapse;
+
+}
+
+
+
+table thead tr {
+
+  background: #e9edf2;
+
+}
+
+
+
+table thead th {
+
+  padding: 1rem 0rem;
+
+  text-align: left;
+
+  color: #444;
+
+  font-size: 0.9rem;
+
+}
+
+
+
+table thead th:first-child {
+
+  padding-left: 1rem;
+
+}
+
+
+
+table tbody td {
+
+  padding: 1rem 0rem;
+
+  color: #444;
+
+}
+
+
+
+table tbody td:first-child {
+
+  padding-left: 1rem;
+
+  color: var(--main-color);
+
+  font-weight: 600;
+
+  font-size: 0.9rem;
+
+}
+
+
+
+table tbody tr {
+
+  border-bottom: 1px solid #dee2e8;
+
+}
+
+
+
+.client {
+
+  display: flex;
+
+  align-items: center;
+
+}
+
+
+
+.client-img {
+
+  margin-right: 0.5rem;
+
+  border: 2px solid #b0b0b0;
+
+  height: 45px;
+
+  width: 45px;
+
+}
+
+
+
+.client-info h4 {
+
+  color: #555;
+
+  font-size: 0.95rem;
+
+  margin-bottom: 4px;
+
+}
+
+
+
+.client-info small {
+
+  color: #777;
+
+}
+
+
+
+.actions span {
+
+  display: inline-block;
+
+  font-size: 1.5rem;
+
+  margin-right: 0.5rem;
+
+}
+
+
+
+.paid {
+
+  display: inline-block;
+
+  text-align: center;
+
+  font-weight: 600;
+
+  color: var(--main-color);
+
+  background: #e5f8ed;
+
+  padding: 0.5rem 1rem;
+
+  border-radius: 20px;
+
+  font-size: 0.8rem;
+
+}
+
+
+
+
+
+.arb-back-p {
+
+  padding: 10px 20px; /* Adjust padding as needed */
+
+  font-size: 16px; /* Font size of the button text */
+
+  font-weight: bold; /* Make the text bold */
+
+  color: #ffffff; /* Text color (white in this case) */
+
+  background-color: #e92222; /* Background color (blue) */
+
+  border: none; /* No border */
+
+  border-radius: 5px; /* Rounded corners */
+
+  cursor: pointer; /* Show pointer cursor on hover */
+
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+
+  margin-bottom: 10px;
+
+  float: right;
+
+}
+
+
+
+/* Hover effect for the button */
+
+.arb-back-p:hover {
+
+  background-color: #c22525; /* Darker blue on hover */
+
+}
+
+
+
+.arb-mid-mir {
+
+  width: 100%;
+
+  background-color:#f8f9fa ;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  padding: 60px 0;
+
+}
+
+
+
+.arb-conmir-container {
+
+  width: 90%;
+
+  max-width: 800px;
+
+  padding: 20px;
+
+  background-color: #fff;
+
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+
+  border-radius: 8px;
+
+}
+
+
+
+.arb-conmir-logo-container {
+
+  display: flex;
+
+  align-items: center;
+
+  margin-bottom: 20px;
+
+}
+
+
+
+.arb-conmir-company-name {
+
+  font-size: 24px;
+
+  font-weight: bold;
+
+}
+
+
+
+.arb-conmir-form-container {
+
+  border-top: 2px solid #007bff;
+
+  padding-top: 20px;
+
+}
+
+
+
+.arb-conmir-form-grid {
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 20px;
+
+}
+
+
+
+.arb-conmir-label {
+
+  font-size: 16px;
+
+  font-weight: bold;
+
+}
+
+
+
+.arb-conmir-input,
+
+.arb-conmir-textarea {
+
+  width: 100%;
+
+  padding: 12px;
+
+  font-size: 16px;
+
+  border: 1px solid #ccc;
+
+  border-radius: 4px;
+
+  box-sizing: border-box;
+
+  margin-top: 10px;
+
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+
+}
+
+
+
+.arb-conmir-button {
+
+  width: 100%;
+
+  font-size: 16px; 
+
+  font-weight: bold;
+
+  padding: 12px 20px;
+
+  font-size: 16px;
+
+  border: none;
+
+  border-radius: 4px;
+
+  background-color: #007bff;
+
+  color: #fff;
+
+  cursor: pointer;
+
+  margin-top: 10px;
+
+}
+
+
+
+
+
+.arb-conmir-upload {
+
+  width: 100%;
+
+  font-size: 14px; 
+
+  font-weight: bold;
+
+  padding: 12px 20px;
+
+  background-color: #246072;
+
+  border-radius: 4px;
+
+  
+
+  color: #fff;
+
+  cursor: pointer;
+
+  margin-top: 10px;
+
+}
+
+
+
+.api-bodyeel {
+
+  font-family: 'Arial', sans-serif;
+
+  margin: 0;
+
+  padding: 0;
+
+  background-color: #f8f9fa ;
+
+  padding: 20px;
+
+}
+
+
+
+.api-container {
+
+  max-width: 920px;
+
+  margin: 0px auto;
+
+  padding: 10px 40px;
+
+  background-color: #fff;
+
+  border-radius: 8px;
+
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+}
+
+
+
+.api-product-detail {
+
+  display: flex;
+
+  align-items: flex-start;
+
+}
+
+
+
+.api-product-image {
+
+  flex: 1;
+
+  margin-right: 20px;
+
+}
+
+
+
+.api-product-image img {
+
+  width: 100%;
+
+  border-radius: 8px;
+
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+
+  margin-top: 35px;
+
+}
+
+
+
+.api-hig-span-ps {
+
+  color: #00695c;
+
+}
+
+
+
+.api-product-info {
+
+  flex: 2;
+
+}
+
+
+
+.api-product-info h3 {
+
+  font-size: 25px;
+
+  margin-bottom: 10px;
+
+  color: #333;
+
+}
+
+
+
+.api-price {
+
+  font-size: 21px;
+
+  color: #000000;
+
+  font-weight: bold;
+
+}
+
+
+
+.api-specs {
+
+  list-style: none;
+
+  padding: 0;
+
+  margin-top: 10px;
+
+}
+
+
+
+.api-specs li {
+
+  font-size: 17px;
+
+  margin-bottom: 24px;
+
+  color: #555;
+
+}
+
+
+
+.api-features {
+
+  margin-top: 30px;
+
+}
+
+
+
+.api-features h3 {
+
+  font-size: 20px;
+
+  margin-bottom: 10px;
+
+  color: rgb(103, 36, 210);
+
+}
+

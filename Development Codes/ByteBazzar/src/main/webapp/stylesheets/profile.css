@@ -1,0 +1,150 @@
+/* Reset some default browser styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.bodydy {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #000;
+    padding: 30px 0px;
+  
+}
+
+
+.sabbb-container {
+    max-width: 845px;
+    margin: 0px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-sizing: border-box;
+    box-shadow:  0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Profile and settings sections */
+.sabbb-profile-section,
+.sabbb-settings-section,
+.sabbb-experience-section {
+    margin-bottom: 30px;
+}
+
+.sabbb-section-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.sabbb-profile-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.sabbb-profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+    border: 3px solid black;
+}
+
+.sabbb-profile-name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.sabbb-change-profile-btn,
+.sabbb-save-profile-btn {
+    background-color: rgb(39, 82, 120);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.sabbb-profile-email {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 26px;
+}
+
+.sabbb-form-group {
+    margin-bottom: 20px;
+}
+
+.sabbb-form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+
+.sabbb-form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.sabbb-form-control::placeholder {
+    color: #000000; 
+    font-size: 15px;
+   
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .sabbb-container {
+        padding: 10px;
+        padding-top: 20px;
+        border-radius: 0px;
+    }
+
+    .sabbb-change-profile-btn, .sabbb-save-profile-btn {
+        padding: 7px 6px;
+    }
+
+    
+    .bodydy {
+
+        padding: 0px;
+    }
+  
+    .sabbb-form-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .sabbb-profile-image {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .sabbb-section-title {
+        font-size: 20px;
+    }
+}
+
+
+
+@media (max-width: 343px) {
+
+.sabbb-profile-email {
+    font-size: 13px;
+}
+
+.sabbb-change-profile-btn, .sabbb-save-profile-btn {
+    background-color: rgb(39, 82, 120);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 6px 7px;
+    cursor: pointer;
+}
+
+}

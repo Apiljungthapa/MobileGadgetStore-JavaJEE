@@ -1,0 +1,117 @@
+/* Global Reset and Styling */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Form Styling */
+
+.ras-bodym {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background: linear-gradient(135deg, #3c1c55, #49c2a7);
+}
+
+.ras-container {
+  max-width: 510px;
+  width: 100%;
+  background-color: #fff;
+  padding: 25px 30px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.ras-title {
+  font-size: 25px;
+  font-weight: 500;
+  position: relative;
+}
+
+.ras-title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 30px;
+  border-radius: 5px;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+
+.ras-content form .ras-user-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+}
+
+.ras-input-box {
+  margin-bottom: 15px;
+  width: calc(100% - 30px);
+}
+
+span.details {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"],
+select {
+  height: 45px;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  transition: all 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+select:focus {
+  border-color: #9b59b6;
+}
+
+.ras-button {
+  height: 45px;
+  margin: 35px 0;
+}
+
+input[type="submit"] {
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: linear-gradient(135deg, #466297, #40c4b8);
+}
+
+input[type="submit"]:hover {
+  transform: scale(0.99);
+  background: linear-gradient(135deg, #40c4b8, #466297);
+}
+
+@media (max-width: 584px) {
+  .ras-container {
+    max-width: 100%;
+  }
+
+  .ras-input-box {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+}

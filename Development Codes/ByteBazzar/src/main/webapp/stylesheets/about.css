@@ -1,0 +1,262 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-evenly;
+  background-color: #0093e9;
+  background-image: linear-gradient(160deg, #465c8a 0%, #032231 100%);
+  padding-top: 30px;
+}
+
+.person {
+  width: 500px;
+  background: #f9fafffa;
+  border-radius: 50px;
+  padding: 30px;
+  margin-bottom: 30px;
+  position: relative;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.image-placeholder {
+  width: 120px; /* Adjusted width */
+  height: 120px; /* Adjusted height */
+  border-radius: 50%;
+  position: absolute;
+  top: 8px;
+  right: 20px;
+}
+
+.name-img {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.text h2 {
+  font-size: 24px; /* Adjusted font size */
+  font-weight: 600;
+  margin-bottom: 15px; /* Adjusted margin */
+}
+
+.text h5 {
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color: #521fa5;
+}
+
+.text p {
+  font-size: 14px; /* Adjusted font size */
+  line-height: 20px; /* Adjusted line height */
+  margin-top: 20px;
+  margin-bottom: 20px; /* Adjusted margin */
+  text-align: justify;
+  padding: 10px;
+}
+
+.data {
+  margin-top: 20px;
+}
+
+.but {
+  width: 140px;
+  height: 45px;
+  font-family: "Roboto", sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  background-color: #f52727;
+  box-shadow: 0px 15px 20px rgba(229, 46, 46, 0.4);
+  border: none;
+  border-radius: 45px;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  color: white;
+}
+
+.but:hover {
+  background-color: #2ee59d;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+/* contact inquiry css */
+.mid-mir {
+  width: 100%;
+  background-color: #fffffff5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px;
+}
+
+.our-team {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+  color: #fff;
+  background-color: #e6ae00;
+}
+
+.our-team h2 {
+  font-size: 1.8rem;
+}
+
+.conmir-container {
+  max-width: 600px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2), 0px -5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+.conmir-logo-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.conmir-logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.conmir-company-name {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.conmir-form-container {
+  border-top: 2px solid #007bff;
+  padding-top: 20px;
+}
+
+.conmir-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.conmir-label {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.conmir-input,
+.conmir-textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #3e399b;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 10px;
+}
+
+.conmir-textarea {
+  resize: none;
+  margin-bottom: 10px;
+}
+
+.conmir-button {
+  padding: 12px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.conmir-button:hover {
+  background-color: #0056b3;
+}
+
+@media screen and (max-width: 1050px) {
+  .person {
+    width: 670px;
+    padding: 40px;
+    margin-bottom: 30px;
+  }
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .person {
+    width: calc(100% - 20px);
+  }
+
+  .image-placeholder {
+    width: 80px; /* Adjusted width for smaller screens */
+    height: 80px; /* Adjusted height for smaller screens */
+    top: 15px;
+    right: 15px;
+  }
+
+  .text h2 {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+
+  .text h5 {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: red;
+  }
+
+  .text p {
+    font-size: 12px;
+    margin-bottom: 15px;
+  }
+
+  .hire {
+    font-size: 12px;
+    padding: 5px 12px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .image-placeholder {
+    width: 65px;
+    height: 65px;
+    right: 5px;
+  }
+}
+
+@media (max-width: 768px) {
+  .our-team h2 {
+    font-size: 1.4rem;
+  }
+  .mid-mir {
+    padding: 30px 0px;
+  }
+  .conmir-container {
+    padding: 15px;
+  }
+  .conmir-logo {
+    width: 50px;
+    height: 50px;
+  }
+  .conmir-company-name {
+    font-size: 20px;
+  }
+  .conmir-form-grid {
+    grid-template-columns: 1fr;
+  }
+}
