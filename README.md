@@ -66,17 +66,16 @@ ByteBazaar is a comprehensive e-commerce platform designed to facilitate the buy
 We welcome contributions to enhance ByteBazaar. Please follow these steps to contribute:
    
 
-* Fork the repository.
-* Create a new branch for your feature or bug fix.
-* Commit your changes and push the branch to your forked repository.
-* Create a pull request with a detailed description of your changes.
+ Fork the repository.
+ Create a new branch for your feature or bug fix.
+ Commit your changes and push the branch to your forked repository.
+ Create a pull request with a detailed description of your changes.
 ```
 
 7. **License**:
 
-
 This project is licensed under the MIT License. See the [https://github.com/Apiljungthapa/MobileGadgetStore-JavaJEE/blob/master/LICENSE] for more details.
-```
+
 
 8. **Contact**:
 ```bash
